@@ -1,0 +1,4 @@
+github.com/blang/semver v0.0.0-20180723201105-3c1074078d32 h1:JN7dmcVkamyKIPCDJAtmfiBcpJCMyoLkxsFbxJs1r74=
+github.com/blang/semver v0.0.0-20180723201105-3c1074078d32/go.mod h1:kRBLl5iJ+tD4TcOOxsy/0fnwebNt5EWlYSAyrTnjyyk=
+github.com/tebeka/selenium v0.0.0-20181011202039-edf31bb7fd71 h1:12IoiRocIaD2t6QOmW/vC6plV94unlr6wOZz4kONW8M=
+github.com/tebeka/selenium v0.0.0-20181011202039-edf31bb7fd71/go.mod h1:eIMjt8y9rypiIrlx7TAlwwjiL8pr0uqZYQHUxhA2NNE=
