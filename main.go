@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/tebeka/selenium"
 	"net"
+	"runtime"
 	"strconv"
 	"time"
 )
@@ -23,6 +24,20 @@ func PickUnUsedPort()(int, error){
 	}
 	return port, nil
 }
+
+func GetOsType()string{
+	switch runtime.GOOS{
+	case "windows":
+		return "./chromedriver.exe"
+	case "linux":
+		return "./chromedriver"
+	case "darwin":
+		return "./chromedriver"
+	default:
+		return "./chromedriver"
+	}
+}
+
 
 func main(){
 	port,err := PickUnUsedPort()
@@ -56,7 +71,8 @@ func main(){
 
 	selenium.SetDebug(false)
 
-	service := NewService(port,opts)
+	OsType := GetOsType()
+	service := NewService(OsType,port,opts)
 	defer service.Stop()
 
 	caps := selenium.Capabilities{"browserName": "chrome"}

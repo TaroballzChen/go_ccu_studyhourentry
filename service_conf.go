@@ -5,8 +5,8 @@ import (
 	"github.com/tebeka/selenium"
 )
 
-func NewService(port int, opts []selenium.ServiceOption)(service *selenium.Service){
-	service, err := selenium.NewChromeDriverService("./chromedriver", port, opts...)
+func NewService(ostype string, port int, opts []selenium.ServiceOption)(service *selenium.Service){
+	service, err := selenium.NewChromeDriverService(ostype, port, opts...)
 	if err != nil {
 		panic(err)
 	}
