@@ -112,5 +112,7 @@ func main(){
 	GetPage(driver,"https://miswww1.ccu.edu.tw/parttime/control2.php")
 	GetPage(driver,"https://miswww1.ccu.edu.tw/parttime/main2.php")
 	ClickAction(driver,"/html/body/form/center/input[3]")
-	time.Sleep(30* time.Second)
+	find_hour_data(driver,"Z135")
+	produce_batchNum(driver,"150")
+	time.Sleep(60* time.Second)
 }
