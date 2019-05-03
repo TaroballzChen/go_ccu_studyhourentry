@@ -20,7 +20,7 @@ func (self *Worklist) InputWork(){
 	var work string
 	for  {
 		fmt.Printf("Work (0 to end):")
-		fmt.Scanf("%s",&work)
+		fmt.Scan(&work)
 		if work != "0"{
 			self.list = append(self.list, work)
 			continue

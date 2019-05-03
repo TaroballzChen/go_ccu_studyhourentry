@@ -52,17 +52,17 @@ func main(){
 	}
 	var user Info
 	fmt.Printf("UserName:")
-	fmt.Scanf("%s",&user.UserName)
+	fmt.Scan(&user.UserName)
 	fmt.Printf("PassWord:")
-	fmt.Scanf("%s",&user.PassWord)
+	fmt.Scan(&user.PassWord)
 
 	var Workinfo WorkTime
 	fmt.Printf("Year:")
-	fmt.Scanf("%d",&Workinfo.Year)
+	fmt.Scan(&Workinfo.Year)
 	fmt.Printf("Month:")
-	fmt.Scanf("%d",&Workinfo.Month)
+	fmt.Scan(&Workinfo.Month)
 	fmt.Printf("WorkHour:")
-	fmt.Scanf("%d",&Workinfo.WorkHour)
+	fmt.Scan(&Workinfo.WorkHour)
 	hourZone, Lefthour := Workinfo.WorkHour/4, Workinfo.WorkHour%4
 
 	workday := AppendWorkday(Workinfo.Year,Workinfo.Month)
